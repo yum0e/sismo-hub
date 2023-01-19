@@ -1,0 +1,22 @@
+name: "Check new groups generation"
+on:
+  pull_request:
+
+jobs:
+  check-new-groups-generation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Install dependencies
+        shell: bash
+        run: |
+          yarn install --frozen-lockfile
+
+      - name: Check new groups generation
+        shell: bash
+        run: |
+          yarn check-new-groups-generation
