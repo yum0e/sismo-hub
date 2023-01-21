@@ -1,5 +1,6 @@
 // eslint-disable-next-line import/order
 import { GroupGeneratorsLibrary } from "topics/group-generator";
+import a from "./a";
 import akamo from "./akamo";
 import akapsFrens from "./akaps-frens";
 import albistLensFollower from "./albist-lens-follower";
@@ -256,6 +257,7 @@ import wojakLens from "./wojak-lens";
 import wonder from "./wonder";
 import xioshdezz from "./xioshdezz";
 import xsant from "./xsant";
+import xyz from "./xyz-jhbhjd"
 import ySFrens from "./y-s--frens";
 import zeroKnowledgeVeteran from "./zero-knowledge-veteran";
 import zikiPassTestnets from "./ziki-pass-testnets";
@@ -525,6 +527,7 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "wonder": wonder,
   "xioshdezz": xioshdezz,
   "xsant": xsant,
+  "eejhbchcj-dkcjsdjc": a,
   "y-s--frens": ySFrens,
   "zero-knowledge-veteran": zeroKnowledgeVeteran,
   "ziki-pass-testnets": zikiPassTestnets,
@@ -535,4 +538,5 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "zkpay-quest": zkPayQuest,
   "zksync-github-stargazers": zksyncGithubStargazers,
   "zl019": zl019,
+  "xyz-test": xyz,
 };
