@@ -1,5 +1,7 @@
 // eslint-disable-next-line import/order
 import { GroupGeneratorsLibrary } from "topics/group-generator";
+import Lrcrypto from "./-lrcrypto";
+import OxlegionLensFollower from "./0xlegion-lens-follower";
 import akamo from "./akamo";
 import akapsFrens from "./akaps-frens";
 import albistLensFollower from "./albist-lens-follower";
@@ -16,6 +18,7 @@ import b1y3OgVoters from "./b1y3-og-voters";
 import baby2fatherEth from "./baby2father-eth";
 import benFriends from "./ben-friends"
 import bgans from "./bgans";
+import birdmore3LensFollows from "./birdmore3-lens-follows";
 import bits5 from "./bits5";
 import blockimperiumgames from "./blockimperiumgames";
 import blocknodes from "./blocknodes";
@@ -81,6 +84,7 @@ import foxfamAdorator from "./foxfam-adorator";
 import friendOf0xba3299d from "./friend-of-0xba3-299d";
 import friends from "./friends";
 import gamejustuAchievements from "./gamejutsu-achievements";
+import garagepunk from "./garagepunk";
 import gem from "./gem";
 import gen0Dagorians from "./gen-0-dagorians";
 import gitcoinGrantsAggregatedRoundsDonors from "./gitcoin-grants-aggregated-rounds-donors";
@@ -120,6 +124,8 @@ import lilnounsProplotContributors from "./lilnouns-proplot-contributors";
 import lilnounsProplotVoters from "./lilnouns-proplot-voters";
 import liver from "./liver";
 import localGroup from "./local-group";
+import lyca from "./lyca";
+import machFrens from "./mach-frens";
 import madfiLensFollowersS01 from "./madfi-lens-followers-s01"
 import madmaxBadge from "./madmax-badge";
 import mahadev from "./mahadev";
@@ -131,11 +137,15 @@ import martingbzSismoThread1LensMirrorers from "./martingbz-sismo-thread-1-lens-
 import masqueradeLensFollowers from "./masquerade-lens-followers";
 import masqueradePolygonZkBadgeHolders from "./masquerade-polygon-zk-badge-holders";
 import mathcastles from "./mathcastles";
+import matsuta from "./matsuta";
 import mcgregor from "./mcgregor";
+import megumi from "./megumi";
 import miceDerpEarly from "./mice-derp-early";
 import mikedoge from "./mikedoge";
+import milan from "./milan";
 import mintanklee from "./mintanklee";
 import mmmemelord from "./mmmemelord";
+import momoshoten from "./momoshoten";
 import monsters from "./monsters";
 import moonDao from "./moon-dao";
 import mrCrypto from "./mr-crypto";
@@ -155,6 +165,7 @@ import offroadmannGroup from "./offroadmann-group";
 import offscriptAttendee from "./offscript-attendee";
 import ohjr10 from "./ohjr10";
 import oldschool from "./oldschool";
+import onemillion1LensFollowers from "./onemillion1-lens-followers";
 import opAirdrop from "./op-airdrop";
 import optimismGovernanceCommitteeMember from "./optimism-governance-committee-member";
 import oxbage from "./oxbage";
@@ -181,6 +192,7 @@ import rhinofiPowerUsers from "./rhinofi-power-users";
 import roadtolife from "./roadtolife";
 import roadtolife2 from "./roadtolife2";
 import rocketlab from "./rocketlab";
+import rogueGang from "./rogue-gang";
 import rotterdamnLensFollower from "./rotterdamn-lens-follower";
 import roxxypoxxy from "./roxxypoxxy";
 import sanye from "./sanye";
@@ -214,13 +226,16 @@ import sismoWorkshopEthbrno from "./sismo-workshop-ethbrno";
 import sk from "./sk";
 import skynetwork from "./skynetwork";
 import skyweaverConquestPlayerSeason12 from "./skyweaver-conquest-player-season-12";
+import soenander33LensFollows from "./soenander33-lens-follows";
 import spaceInspirers from "./space-inspirers";
 import stargateFinance from "./stargate-finance";
 import steven from "./steven";
+import suke from "./suke";
 import supporterOf100VerifiedAirdrops from "./supporter-of-100--verified-airdrops";
 import swapperArmyfox from "./swapper-armyfox";
 import sysmotestbadge1 from "./sysmotestbadge1";
 import tallyHoGithubStargazers from "./tally-ho-github-stargazers";
+import tarozzy from "./tarozzy";
 import testBadge from "./test-badge";
 import theDogePoundOwners from "./the-doge-pound-owners";
 import theMergeContributor from "./the-merge-contributor";
@@ -255,8 +270,10 @@ import wiwNftLegendaryTraders from "./wiw-nft-legendary-traders";
 import wojakLens from "./wojak-lens";
 import wonder from "./wonder";
 import xioshdezz from "./xioshdezz";
+import xnovaLensFollower from "./xnova-lens-follower";
 import xsant from "./xsant";
 import ySFrens from "./y-s--frens";
+import zen from "./zen";
 import zeroKnowledgeVeteran from "./zero-knowledge-veteran";
 import zikiPassTestnets from "./ziki-pass-testnets";
 import zkHack from "./zk-hack";
@@ -269,6 +286,8 @@ import zl019 from "./zl019";
 
 
 export const groupGenerators: GroupGeneratorsLibrary = {
+  "-lrcrypto": Lrcrypto,
+  "0xlegion-lens-follower": OxlegionLensFollower,
   "996-icu": icu996,
   "akamo": akamo,
   "akaps-frens": akapsFrens,
@@ -286,6 +305,7 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "baby2father-eth": baby2fatherEth,
   "ben-friends": benFriends, 
   "bgans": bgans,
+  "birdmore3-lens-follows": birdmore3LensFollows,
   "bits5": bits5,
   "blockimperiumgames": blockimperiumgames,
   "blocknodes": blocknodes,
@@ -331,6 +351,7 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "foxfam-adorator": foxfamAdorator,
   "friend-of-0xba3-299d": friendOf0xba3299d,
   "friends": friends,
+  "garagepunk": garagepunk,
   "gem": gem,
   "gen-0-dagorians": gen0Dagorians,
   "gotchi-french-army-x-sismo-live": gotchiFrenchArmyXSismoLive,
@@ -352,17 +373,23 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "lens-followers": lensFollowers,
   "lands": lands,
   "lenster-early-bloomer": lensterEarlyBloomer,
+  "lyca": lyca,
+  "mach-frens": machFrens,
   "mannyradu": mannyradu,
   "lenster-supporter": lensterSupporter,
   "marianmarius": marianmarius,
   "mathcastles": mathcastles,
+  "matsuta": matsuta,
   "mcgregor": mcgregor,
+  "megumi": megumi,
   "mice-derp-early": miceDerpEarly,
   "lens-meme-collector-mirror": lensMemeCollectorMirror,
   "mahadev": mahadev,
   "lenster-gas-supporter": lensterGasSupporter,
   "mikedoge": mikedoge,
+  "milan": milan,
   "mmmemelord": mmmemelord,
+  "momoshoten": momoshoten,
   "moon-dao": moonDao,
   "mr-crypto": mrCrypto,
   "my-1": my1,
@@ -375,6 +402,7 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "offscript-attendee": offscriptAttendee,
   "ohjr10": ohjr10,
   "oldschool": oldschool,
+  "onemillion1-lens-followers": onemillion1LensFollowers,
   "petrolistul": petrolistul,
   "phantabear": phantabear,
   "por": por,
@@ -389,6 +417,7 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "rekt-familly-degen": rektFamillyDegen,
   "roadtolife": roadtolife,
   "roadtolife2": roadtolife2,
+  "rogue-gang": rogueGang,
   "rotterdamn-lens-follower": rotterdamnLensFollower,
   "roxxypoxxy": roxxypoxxy,
   "sanye": sanye,
@@ -401,13 +430,16 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "sismo-oarctic": sismoOarctic,
   "sk": sk,
   "skynetwork": skynetwork,
+  "soenander33-lens-follows": soenander33LensFollows,
   "space-inspirers": spaceInspirers,
   "stargate-finance": stargateFinance,
   "steven": steven,
+  "suke": suke,
   "supporter-of-100--verified-airdrops": supporterOf100VerifiedAirdrops,
   "swapper-armyfox": swapperArmyfox,
   "sysmotestbadge1": sysmotestbadge1,
   "tally-ho-github-stargazers": tallyHoGithubStargazers,
+  "tarozzy": tarozzy,
   "test-badge": testBadge,
   "the-sandbox-contributor": theSandboxContributor,
   "tima": tima,
@@ -524,8 +556,10 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "wojak-lens": wojakLens,
   "wonder": wonder,
   "xioshdezz": xioshdezz,
+  "xnova-lens-follower": xnovaLensFollower,
   "xsant": xsant,
   "y-s--frens": ySFrens,
+  "zen": zen,
   "zero-knowledge-veteran": zeroKnowledgeVeteran,
   "ziki-pass-testnets": zikiPassTestnets,
   "zk-hack": zkHack,

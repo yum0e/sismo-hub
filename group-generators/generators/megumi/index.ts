@@ -11,26 +11,26 @@ import {
 
 const generator: GroupGenerator = {
   
-  generationFrequency: GenerationFrequency.Once,
-  dependsOn: ["ethereum-power-users"],
+  generationFrequency: GenerationFrequency.Weekly,
+  dependsOn: ["zklend-poap-contributor"],
   
   generate: async (context: GenerationContext, groupStore: GroupStore): Promise<GroupWithData[]> => {
   
     
-    const ethereumPowerUsersGroupLatest = await groupStore.latest(
-      "ethereum-power-users"
+    const zklendPoapContributorGroupLatest = await groupStore.latest(
+      "zklend-poap-contributor"
     );
     
-    const ethereumPowerUsersData0 = dataOperators.Map(
-      await ethereumPowerUsersGroupLatest.data(),
+    const zklendPoapContributorData0 = dataOperators.Map(
+      await zklendPoapContributorGroupLatest.data(),
       1
     );
 
     return [
       {
-        name: "ethereum-adopter",
+        name: "megumi",
         timestamp: context.timestamp,
-        data: ethereumPowerUsersData0,
+        data: zklendPoapContributorData0,
         valueType: ValueType.Score,
         tags: [Tags.Factory],
       },

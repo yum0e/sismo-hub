@@ -11,26 +11,26 @@ import {
 
 const generator: GroupGenerator = {
   
-  generationFrequency: GenerationFrequency.Once,
-  dependsOn: ["ethereum-power-users"],
+  generationFrequency: GenerationFrequency.Weekly,
+  dependsOn: ["helper"],
   
   generate: async (context: GenerationContext, groupStore: GroupStore): Promise<GroupWithData[]> => {
   
     
-    const ethereumPowerUsersGroupLatest = await groupStore.latest(
-      "ethereum-power-users"
+    const helperGroupLatest = await groupStore.latest(
+      "helper"
     );
     
-    const ethereumPowerUsersData0 = dataOperators.Map(
-      await ethereumPowerUsersGroupLatest.data(),
+    const helperData0 = dataOperators.Map(
+      await helperGroupLatest.data(),
       1
     );
 
     return [
       {
-        name: "ethereum-adopter",
+        name: "momoshoten",
         timestamp: context.timestamp,
-        data: ethereumPowerUsersData0,
+        data: helperData0,
         valueType: ValueType.Score,
         tags: [Tags.Factory],
       },

@@ -12,25 +12,25 @@ import {
 const generator: GroupGenerator = {
   
   generationFrequency: GenerationFrequency.Once,
-  dependsOn: ["ethereum-power-users"],
+  dependsOn: ["ethereum-adopter"],
   
   generate: async (context: GenerationContext, groupStore: GroupStore): Promise<GroupWithData[]> => {
   
     
-    const ethereumPowerUsersGroupLatest = await groupStore.latest(
-      "ethereum-power-users"
+    const ethereumAdopterGroupLatest = await groupStore.latest(
+      "ethereum-adopter"
     );
     
-    const ethereumPowerUsersData0 = dataOperators.Map(
-      await ethereumPowerUsersGroupLatest.data(),
+    const ethereumAdopterData0 = dataOperators.Map(
+      await ethereumAdopterGroupLatest.data(),
       1
     );
 
     return [
       {
-        name: "ethereum-adopter",
+        name: "lyca",
         timestamp: context.timestamp,
-        data: ethereumPowerUsersData0,
+        data: ethereumAdopterData0,
         valueType: ValueType.Score,
         tags: [Tags.Factory],
       },
