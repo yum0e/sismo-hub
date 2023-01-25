@@ -46,6 +46,9 @@ main() {
   # Check that there is at least one new group generator
   computeNbOfNewGroupGenerators $new_group_generators
 
+  # To avoid spamming the CI with too many group generators in a single PR
+  spamProtection $new_group_generators
+
   # generate the groups that the new group generators depend on
   for new_group_generators_filename in $new_group_generators_filenames; 
   do
@@ -58,9 +61,6 @@ main() {
       done
     fi
   done
-
-  # To avoid spamming the CI with too many group generators in a single PR
-  spamProtection $new_group_generators
 
   # check that the new group generators are valid
   for group_generator_name in $new_group_generators; 
