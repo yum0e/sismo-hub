@@ -13,6 +13,12 @@ computeNbOfNewGroupGenerators() {
     echo "No new group generator to check"
     exit 0
   fi
+
+  # to avoid spamming the CI with too many group generators in a single PR
+  if [ $nb_of_new_group_generators -gt $MAX_NB_OF_GROUP_GENERATORS_TO_CHECK ]; then
+    echo "Too many new group generators to check: $nb_of_new_group_generators superior to $MAX_NB_OF_GROUP_GENERATORS_TO_CHECK (max allowed)"
+    exit 0
+  fi
 }
 
 generateGroup() {
@@ -26,25 +32,13 @@ generateGroup() {
   echo -e "Group generator '$group_generator_name' is valid ✨\n";
 }
 
-# To avoid spamming the CI with too many group generators in a single PR
-spamProtection() {
-  counter=0
-  for group_generator_name in $1; 
-  do 
-    if [ $counter -eq $MAX_NB_OF_GROUP_GENERATORS_TO_CHECK ]; then
-      echo "Spam protection: $MAX_NB_OF_GROUP_GENERATORS_TO_CHECK group generators to check, abort checking."
-      exit 0
-    fi
-    counter=$((counter+1))
-  done
-}
-
 main() {
   new_group_generators=$(git diff origin/main HEAD -- group-generators/generators/index.ts | grep '^+  "' | awk -F'"' '{print $2}')
   new_group_generators_filenames=$(git diff origin/main HEAD -- group-generators/generators/index.ts | grep '^+import ' | awk -F'"' '{print $2}' | awk -F'/' '{print $2}')
 
   # Check that there is at least one new group generator
   computeNbOfNewGroupGenerators $new_group_generators
+  echo $new_group_generators
 
   # To avoid spamming the CI with too many group generators in a single PR
   spamProtection $new_group_generators

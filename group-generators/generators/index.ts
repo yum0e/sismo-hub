@@ -1,5 +1,34 @@
 // eslint-disable-next-line import/order
 import { GroupGeneratorsLibrary } from "topics/group-generator";
+
+import chron0n from "./chron0n";
+import circularmerchLensFollowers from "./circularmerch-lens-followers";
+import codedoge from "./codedoge";
+import coinCenterDonators from "./coin-center-donators";
+import coinkingContributor from "./coinking-contributor";
+import commitdao from "./commitdao";
+import cowswapRest from "./cowswap-rest"
+import cowswap1000 from "./cowswap-top-1000"
+import cowswap15000 from "./cowswap-top-15000"
+import cowswap5000 from "./cowswap-top-5000"
+import cowswapTopHundred from "./cowswap-top-hundred";
+import cryptoLemon from "./crypto-lemon";
+import cryptomarketblog from "./cryptomarketblog";
+import cryptomonkeys from "./cryptomonkeys";
+import cryptoteluguLens from "./cryptotelugu-lens";
+import cryptoteluguTwitterFollowers from "./cryptotelugu-twitter-followers";
+import cultivatordaoVoters from "./cultivatordao-voters";
+import cyber from "./cyber";
+import cyberconnect from "./cyberconnect";
+import dale1075 from "./dale1075";
+import davidZkBadge from "./david-zk-badge";
+import degenscoreBeacon from "./degenscore-beacon";
+import delovoyDaoChristmas from "./delovoy-dao-christmas";
+import dhadrienFriends from "./dhadrien-friends";
+import diggerLensFollowers from "./digger-lens-followers";
+import digi from "./digi";
+import dkorshunov from "./dkorshunov";
+import dmt from "./dmt";
 import Lrcrypto from "./-lrcrypto";
 import OxlegionLensFollower from "./0xlegion-lens-follower";
 import akamo from "./akamo";
@@ -32,38 +61,10 @@ import byrd2LensFollow from "./byrd2-lens-follow";
 import byrd3885LensFollows from "./byrd3885-lens-follows";
 import chaoticGoodDao from "./chaotic-good-dao";
 import chikuwa from "./chikuwa";
-import chron0n from "./chron0n";
-import circularmerchLensFollowers from "./circularmerch-lens-followers";
-import codedoge from "./codedoge";
-import coinCenterDonators from "./coin-center-donators";
-import coinkingContributor from "./coinking-contributor";
-import commitdao from "./commitdao";
-import cowswapRest from "./cowswap-rest"
-import cowswap1000 from "./cowswap-top-1000"
-import cowswap15000 from "./cowswap-top-15000"
-import cowswap5000 from "./cowswap-top-5000"
-import cowswapTopHundred from "./cowswap-top-hundred";
-import cryptoLemon from "./crypto-lemon";
-import cryptomarketblog from "./cryptomarketblog";
-import cryptomonkeys from "./cryptomonkeys";
-import cryptoteluguLens from "./cryptotelugu-lens";
-import cryptoteluguTwitterFollowers from "./cryptotelugu-twitter-followers";
-import cultivatordaoVoters from "./cultivatordao-voters";
-import cyber from "./cyber";
-import cyberconnect from "./cyberconnect";
-import dale1075 from "./dale1075";
-import davidZkBadge from "./david-zk-badge";
-import degenscoreBeacon from "./degenscore-beacon";
-import delovoyDaoChristmas from "./delovoy-dao-christmas";
-import dhadrienFriends from "./dhadrien-friends";
-import diggerLensFollowers from "./digger-lens-followers";
-import digi from "./digi";
-import dkorshunov from "./dkorshunov";
-import dmt from "./dmt";
 import dorgMembers from "./dorg-members";
 import dorianGray from "./dorian-gray";
-import dropst3r from "./dropst3r";
 import dualPepes from "./dual-pepes";
+import dropst3r from "./dropst3r";
 import earlyWojak from "./early-wojak";
 import empiredao20231DayDeskPass from "./empiredao-2023-1-day-desk-pass";
 import empiredao20235DayDeskPass from "./empiredao-2023-5-day-desk-pass";
@@ -305,6 +306,34 @@ import zl019 from "./zl019";
 
 
 export const groupGenerators: GroupGeneratorsLibrary = {
+  "chron0n": chron0n,
+  "circularmerch-lens-followers": circularmerchLensFollowers,
+  "codedoge": codedoge,
+  "coin-center-donators": coinCenterDonators,
+  "coinking-contributor": coinkingContributor,
+  "commitdao": commitdao,
+  "cowswap-rest": cowswapRest,
+  "cowswap-top-1000": cowswap1000,
+  "cowswap-top-15000": cowswap15000,
+  "cowswap-top-5000": cowswap5000,
+  "cowswap-top-hundred": cowswapTopHundred,
+  "crypto-lemon": cryptoLemon,
+  "cryptomarketblog": cryptomarketblog,
+  "cryptomonkeys": cryptomonkeys,
+  "cryptotelugu-lens": cryptoteluguLens,
+  "cryptotelugu-twitter-followers": cryptoteluguTwitterFollowers,
+  "cultivatordao-voters": cultivatordaoVoters,
+  "cyber": cyber,
+  "cyberconnect": cyberconnect,
+  "dale1075": dale1075,
+  "david-zk-badge": davidZkBadge,
+  "degenscore-beacon": degenscoreBeacon,
+  "delovoy-dao-christmas": delovoyDaoChristmas,
+  "dhadrien-friends": dhadrienFriends,
+  "digger-lens-followers": diggerLensFollowers,
+  "digi": digi,
+  "dkorshunov": dkorshunov,
+  "dmt": dmt,
   "-lrcrypto": Lrcrypto,
   "0xlegion-lens-follower": OxlegionLensFollower,
   "996-icu": icu996,
@@ -338,34 +367,6 @@ export const groupGenerators: GroupGeneratorsLibrary = {
   "byrd3885-lens-follows": byrd3885LensFollows,
   "chaotic-good-dao": chaoticGoodDao,
   "chikuwa": chikuwa,
-  "chron0n": chron0n,
-  "circularmerch-lens-followers": circularmerchLensFollowers,
-  "codedoge": codedoge,
-  "coin-center-donators": coinCenterDonators,
-  "coinking-contributor": coinkingContributor,
-  "commitdao": commitdao,
-  "cowswap-rest": cowswapRest,
-  "cowswap-top-1000": cowswap1000,
-  "cowswap-top-15000": cowswap15000,
-  "cowswap-top-5000": cowswap5000,
-  "cowswap-top-hundred": cowswapTopHundred,
-  "crypto-lemon": cryptoLemon,
-  "cryptomarketblog": cryptomarketblog,
-  "cryptomonkeys": cryptomonkeys,
-  "cryptotelugu-lens": cryptoteluguLens,
-  "cryptotelugu-twitter-followers": cryptoteluguTwitterFollowers,
-  "cultivatordao-voters": cultivatordaoVoters,
-  "cyber": cyber,
-  "cyberconnect": cyberconnect,
-  "dale1075": dale1075,
-  "david-zk-badge": davidZkBadge,
-  "degenscore-beacon": degenscoreBeacon,
-  "delovoy-dao-christmas": delovoyDaoChristmas,
-  "dhadrien-friends": dhadrienFriends,
-  "digger-lens-followers": diggerLensFollowers,
-  "digi": digi,
-  "dkorshunov": dkorshunov,
-  "dmt": dmt,
   "dorg-members": dorgMembers,
   "dorian-gray": dorianGray,
   "dropst3r": dropst3r,
