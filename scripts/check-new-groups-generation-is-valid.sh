@@ -28,10 +28,15 @@ generateGroup() {
 
 # To avoid spamming the CI with too many group generators in a single PR
 spamProtection() {
-  if [ $1 -eq $MAX_NB_OF_GROUP_GENERATORS_TO_CHECK ]; then
-      echo "Spam protection: $MAX_NB_OF_GROUP_GENERATORS_TO_CHECK group generators checked, stopping here"
-      exit 1
-  fi
+  counter=0
+  for group_generator_name in $1; 
+  do 
+    if [ $counter -eq $MAX_NB_OF_GROUP_GENERATORS_TO_CHECK ]; then
+      echo "Spam protection: $MAX_NB_OF_GROUP_GENERATORS_TO_CHECK group generators to check, abort checking."
+      exit 0
+    fi
+    counter=$((counter+1))
+  done
 }
 
 main() {
@@ -54,14 +59,13 @@ main() {
     fi
   done
 
+  # To avoid spamming the CI with too many group generators in a single PR
+  spamProtection $new_group_generators
+
   # check that the new group generators are valid
-  counter=0
   for group_generator_name in $new_group_generators; 
   do 
-    spamProtection $counter
-
     generateGroup $group_generator_name
-    counter=$((counter+1))
   done
 
   exit 0
